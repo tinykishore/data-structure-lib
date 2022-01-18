@@ -1,3 +1,5 @@
+// Fully Working, more tests needed
+
 #include <iostream>
 
 typedef struct template_stack {
@@ -54,7 +56,7 @@ Stack *reverse(Stack **stack) {
     return reversedStack;
 }
 
-void displayStack(Stack **stack) {
+void display(Stack **stack) {
     Stack *temp = *stack;
     while (temp != nullptr) {
         if (temp->link != nullptr) std::cout << temp->data << " <- ";
